@@ -29,10 +29,10 @@ function App() {
           <Navbar />
           <Container component="main" sx={{ mt: 4, mb: 4, flex: 1 }}>
             <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/services" element={<Services />} />
-              <Route path="/cart" element={<Cart />} />
-              <Route path="/checkout" element={<Checkout />} />
+              <Route index element={<Home />} />
+              <Route path="services" element={<Services />} />
+              <Route path="cart" element={<Cart />} />
+              <Route path="checkout" element={<Checkout />} />
             </Routes>
           </Container>
         </Box>
