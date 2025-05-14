@@ -14,6 +14,7 @@ import {
 } from '@mui/material';
 import { Delete as DeleteIcon } from '@mui/icons-material';
 import { Link as RouterLink } from 'react-router-dom';
+import { pages } from '../data/links';
 
 // This would normally come from a state management solution like Redux
 const cartItems = [];
@@ -30,7 +31,7 @@ const Cart = () => {
       {cartItems.length === 0 ? (
         <Box textAlign="center" py={4}>
           <Typography variant="h6" gutterBottom>Košík je prázdný</Typography>
-          <Button variant="contained" color="primary" component={RouterLink} to="/services">Produkty</Button>
+          <Button variant="contained" color="primary" component={RouterLink} to={pages.products}>Produkty</Button>
         </Box>
       ) : (
         <Box sx={{ display: 'flex', flexDirection: { xs: 'column', md: 'row' }, gap: 4 }}>
@@ -84,15 +85,7 @@ const Cart = () => {
                 <Typography variant="h6">Celkem</Typography>
                 <Typography variant="h6">${total.toFixed(2)}</Typography>
               </Box>
-              <Button
-                variant="contained"
-                color="primary"
-                fullWidth
-                component={RouterLink}
-                to="/checkout"
-              >
-                Potvrdit objednávku
-              </Button>
+              <Button variant="contained" color="primary" fullWidth component={RouterLink} to={pages.checkout} > Potvrdit objednávku </Button>
             </Paper>
           </Box>
         </Box>

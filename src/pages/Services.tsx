@@ -2,6 +2,7 @@ import React from 'react';
 import { Box, Typography, Grid, Card, CardContent, CardActions, Button, Chip } from '@mui/material';
 import { Link as RouterLink } from 'react-router-dom';
 import { products } from '../data/products';
+import { pages } from '../data/links';
 
 
 const Services = () => {
@@ -33,7 +34,7 @@ const Services = () => {
               </CardContent>
               <CardActions>
                 <Button size="small" color="primary" variant="contained" component={RouterLink} to="/cart"> Přidat do košíku</Button>
-                <Button size="small" color="primary">Více o produktu</Button>
+                <Button size="small" color="primary" component={RouterLink} to={pages.product(service.id)}>Více o produktu</Button>
               </CardActions>
             </Card>
           </Grid>
