@@ -1,6 +1,7 @@
 import React from 'react';
 import { Box, Typography, Button, Grid, Card, CardContent, CardActions } from '@mui/material';
 import { Link as RouterLink } from 'react-router-dom';
+import { pages } from '../data/links';
 
 const featuredServices = [
   {
@@ -27,7 +28,7 @@ const Home = () => {
         <Typography variant="h3" component="h1" gutterBottom>Sportovní vybavení na míru</Typography>
         <Typography variant="h5" component="h2" gutterBottom>Objevte širokou nabídku produktů pro všechny vaše potřeby</Typography>
         <Button
-          variant="contained" color="secondary" size="large" component={RouterLink} to="/services" sx={{ mt: 2 }}>Prohlédnout si produkty</Button>
+          variant="contained" color="secondary" size="large" component={RouterLink} to={pages.products} sx={{ mt: 2 }}>Prohlédnout si produkty</Button>
       </Box>
 
       <Typography variant="h4" component="h2" gutterBottom align="center">Další služby</Typography>
@@ -46,7 +47,7 @@ const Home = () => {
                 </Typography>
               </CardContent>
               <CardActions>
-                <Button size="small" color="primary" component={RouterLink} to="/services">
+                <Button size="small" color="primary" component={RouterLink} to={pages.products}>
                   Learn More
                 </Button>
               </CardActions>
