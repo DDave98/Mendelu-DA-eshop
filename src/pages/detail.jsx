@@ -9,7 +9,7 @@ export const DetailProduct = () =>
     return (
         <div className="container" style={{margin: '0 auto', padding: '20px', fontFamily: 'Arial, sans-serif' }}>
             <h1 style={{ textAlign: 'center', color: '#333' }}>Detail Product - {id}</h1>
-            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '20px' }}>
+            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '20px', padding: '20px'}}>
                 <img 
                     src={products[id].photo} 
                     alt={products[id].title} 
