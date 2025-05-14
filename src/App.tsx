@@ -21,21 +21,20 @@ const theme = createTheme({
   },
 });
 
-type Flow = {
-  [key: string]: {
-    message?: string;
-    user?: boolean;
-    path?: string | null;
-  };
-};
+const settings = {
+  general: {embedded: true},
+  chatHistory: {storageKey: "playground"},
+  botBubble: {simulateStream: true}
+}
 
-const flow : Flow ={
+const flow={
   start: {
-    message: "Vítejte! Jak vám mohu pomoci?",
-    path: "end"
+      message: "Welcome to the playground 🥳! Edit and experiment as you wish!",
+      path: "end_loop"
   },
-  end: {
-    message: "Děkuji za vaši zprávu!"
+  end_loop: {
+      message: (params:any) => `Received: ${params.userInput}`,
+      path: "end_loop"
   }
 };
 
@@ -54,7 +53,7 @@ function App() {
               <Route path="checkout" element={<Checkout />} />
             </Routes>
           </Container>
-          <ChatBot flow={flow} />
+          <ChatBot flow={flow} settings={settings} />
         </Box>
       </Router>
     </ThemeProvider>
