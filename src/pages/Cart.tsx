@@ -16,20 +16,7 @@ import { Delete as DeleteIcon } from '@mui/icons-material';
 import { Link as RouterLink } from 'react-router-dom';
 
 // This would normally come from a state management solution like Redux
-const cartItems = [
-  {
-    id: 1,
-    title: 'Website Optimization',
-    price: 299,
-    quantity: 1,
-  },
-  {
-    id: 2,
-    title: 'SEO Services',
-    price: 399,
-    quantity: 1,
-  },
-];
+const cartItems = [];
 
 const Cart = () => {
   const subtotal = cartItems.reduce((sum, item) => sum + item.price * item.quantity, 0);
@@ -38,23 +25,12 @@ const Cart = () => {
 
   return (
     <Box sx={{ maxWidth: 1200, mx: 'auto', px: 2 }}>
-      <Typography variant="h4" component="h1" gutterBottom>
-        Shopping Cart
-      </Typography>
+      <Typography variant="h4" component="h1" gutterBottom>Náš košík</Typography>
 
       {cartItems.length === 0 ? (
         <Box textAlign="center" py={4}>
-          <Typography variant="h6" gutterBottom>
-            Your cart is empty
-          </Typography>
-          <Button
-            variant="contained"
-            color="primary"
-            component={RouterLink}
-            to="/services"
-          >
-            Browse Services
-          </Button>
+          <Typography variant="h6" gutterBottom>Košík je prázdný</Typography>
+          <Button variant="contained" color="primary" component={RouterLink} to="/services">Produkty</Button>
         </Box>
       ) : (
         <Box sx={{ display: 'flex', flexDirection: { xs: 'column', md: 'row' }, gap: 4 }}>
@@ -63,11 +39,11 @@ const Cart = () => {
               <Table>
                 <TableHead>
                   <TableRow>
-                    <TableCell>Service</TableCell>
-                    <TableCell align="right">Price</TableCell>
-                    <TableCell align="right">Quantity</TableCell>
-                    <TableCell align="right">Total</TableCell>
-                    <TableCell align="right">Actions</TableCell>
+                    <TableCell>Produkt</TableCell>
+                    <TableCell align="right">Cena</TableCell>
+                    <TableCell align="right">Množství</TableCell>
+                    <TableCell align="right">Celkem</TableCell>
+                    <TableCell align="right">Akce</TableCell>
                   </TableRow>
                 </TableHead>
                 <TableBody>
@@ -94,18 +70,18 @@ const Cart = () => {
           <Box sx={{ flex: 1 }}>
             <Paper sx={{ p: 2 }}>
               <Typography variant="h6" gutterBottom>
-                Order Summary
+                Shrnutí objednávky
               </Typography>
               <Box sx={{ display: 'flex', justifyContent: 'space-between', mb: 1 }}>
-                <Typography>Subtotal</Typography>
+                <Typography>Mezisoučet</Typography>
                 <Typography>${subtotal.toFixed(2)}</Typography>
               </Box>
               <Box sx={{ display: 'flex', justifyContent: 'space-between', mb: 1 }}>
-                <Typography>Tax (10%)</Typography>
+                <Typography>DPH (21%)</Typography>
                 <Typography>${tax.toFixed(2)}</Typography>
               </Box>
               <Box sx={{ display: 'flex', justifyContent: 'space-between', mb: 2 }}>
-                <Typography variant="h6">Total</Typography>
+                <Typography variant="h6">Celkem</Typography>
                 <Typography variant="h6">${total.toFixed(2)}</Typography>
               </Box>
               <Button
@@ -115,7 +91,7 @@ const Cart = () => {
                 component={RouterLink}
                 to="/checkout"
               >
-                Proceed to Checkout
+                Potvrdit objednávku
               </Button>
             </Paper>
           </Box>
