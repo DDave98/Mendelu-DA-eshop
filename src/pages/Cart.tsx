@@ -17,16 +17,12 @@ import { Link as RouterLink } from 'react-router-dom';
 import { pages } from '../data/links';
 import { useCart } from '../data/cartContext';
 
-// This would normally come from a state management solution like Redux
-const cartItems : any[] = [];
 
-const { cart, dispatch } = useCart();
-const subtotal = cart.reduce((sum:any, item:any) => sum + item.price * item.quantity, 0);
-  const tax = subtotal * 0.1; // 10% tax
-  const total = subtotal + tax;
+const Cart = () => 
+{
 
-const Cart = () => {
-  const subtotal = cartItems.reduce((sum, item) => sum + item.price * item.quantity, 0);
+  const { cart, dispatch } = useCart();
+  const subtotal = cart.reduce((sum:any, item:any) => sum + item.price * item.quantity, 0);
   const tax = subtotal * 0.1; // 10% tax
   const total = subtotal + tax;
 
