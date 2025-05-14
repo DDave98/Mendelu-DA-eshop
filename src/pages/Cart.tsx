@@ -1,9 +1,9 @@
-import { useCart } from '../context/CartContext';
+import { useCart } from '../data/cartContext';
 
 const Cart = () => {
   const { cart, dispatch } = useCart();
 
-  const subtotal = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
+  const subtotal = cart.reduce((sum:any, item:any) => sum + item.price * item.quantity, 0);
   const tax = subtotal * 0.1; // 10% tax
   const total = subtotal + tax;
 

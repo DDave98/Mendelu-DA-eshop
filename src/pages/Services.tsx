@@ -3,9 +3,12 @@ import { Box, Typography, Grid, Card, CardContent, CardActions, Button, Chip } f
 import { Link as RouterLink } from 'react-router-dom';
 import { products } from '../data/products';
 import { pages } from '../data/links';
-import { useCart } from '../context/CartContext';
+import { useCart } from '../data/cartContext';
 
-const Services = () => {
+const Services = () => 
+{
+  const { dispatch } = useCart();
+  
   return (
     <Box>
       <Typography variant="h4" component="h1" gutterBottom align="center">
