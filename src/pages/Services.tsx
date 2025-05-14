@@ -3,7 +3,7 @@ import { Box, Typography, Grid, Card, CardContent, CardActions, Button, Chip } f
 import { Link as RouterLink } from 'react-router-dom';
 import { products } from '../data/products';
 import { pages } from '../data/links';
-
+import { useCart } from '../context/CartContext';
 
 const Services = () => {
   return (
@@ -33,7 +33,14 @@ const Services = () => {
                 </Box>
               </CardContent>
               <CardActions>
-                <Button size="small" color="primary" variant="contained" component={RouterLink} to="/cart"> Přidat do košíku</Button>
+                <Button
+                    size="small"
+                    color="primary"
+                    variant="contained"
+                    onClick={() => dispatch({ type: 'ADD_TO_CART', payload: service })}
+                  >
+                  Přidat do košíku
+                </Button>
                 <Button size="small" color="primary" component={RouterLink} to={pages.product + service.id}>Více o produktu</Button>
               </CardActions>
             </Card>

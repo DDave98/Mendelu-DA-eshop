@@ -10,6 +10,7 @@ import Cart from './pages/Cart';
 import Checkout from './pages/Checkout';
 import ChatBot from 'react-chatbotify';
 import { DetailProduct } from './pages/detail';
+import { CartProvider } from './data/cartContext';
 
 const theme = createTheme({
   palette: {
@@ -89,21 +90,23 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <Router>
-        <Box sx={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
-          <Navbar />
-          <Container component="main" sx={{ mt: 4, mb: 4, flex: 1 }}>
-            <Routes>
-              <Route index element={<Home />} />
-              <Route path="products" element={<Services />} />
-              <Route path="cart" element={<Cart />} />
-              <Route path="checkout" element={<Checkout />} />
-              <Route path="products/:id" element={<DetailProduct />} />
-            </Routes>
-          </Container>
-          <ChatBot flow={flow} settings={settings} />
-        </Box>
-      </Router>
+      <CartProvider>
+        <Router>
+          <Box sx={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
+            <Navbar />
+            <Container component="main" sx={{ mt: 4, mb: 4, flex: 1 }}>
+              <Routes>
+                <Route index element={<Home />} />
+                <Route path="products" element={<Services />} />
+                <Route path="cart" element={<Cart />} />
+                <Route path="checkout" element={<Checkout />} />
+                <Route path="products/:id" element={<DetailProduct />} />
+              </Routes>
+            </Container>
+            <ChatBot flow={flow} settings={settings} />
+          </Box>
+        </Router>
+      </CartProvider>
     </ThemeProvider>
   );
 }
