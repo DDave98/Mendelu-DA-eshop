@@ -38,7 +38,7 @@ const flow = {
     path: "handle_user_input"
   },
   handle_user_input: {
-    message: (params) => {
+    message: (params:any) => {
       const userInput = params.userInput.toLowerCase();
       if (userInput.includes('hledat produkt')) {
         return "Skvělé! Jaký produkt hledáte?";
