@@ -7,7 +7,7 @@ export const DetailProduct = () =>
     const { id } = useParams(); // Získá ID z URL
 
     return (
-        <div className="container" style={{ maxWidth: '800px', margin: '0 auto', padding: '20px', fontFamily: 'Arial, sans-serif' }}>
+        <div className="container" style={{ maxWidth: '2000px', margin: '0 auto', padding: '20px', fontFamily: 'Arial, sans-serif' }}>
             <h1 style={{ textAlign: 'center', color: '#333' }}>Detail Product - {id}</h1>
             <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '20px' }}>
                 <img 
