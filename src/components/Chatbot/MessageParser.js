@@ -13,5 +13,5 @@ class MessageParser {
     }
   }
   
-  export default MessageParser;
+export default MessageParser;
   

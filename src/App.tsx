@@ -8,7 +8,7 @@ import Home from './pages/Home';
 import Services from './pages/Services';
 import Cart from './pages/Cart';
 import Checkout from './pages/Checkout';
-import Chatbot from './components/Chatbot/chatbot';
+import ChatBot from 'react-chatbotify';
 
 const theme = createTheme({
   palette: {
@@ -36,7 +36,26 @@ function App() {
               <Route path="checkout" element={<Checkout />} />
             </Routes>
           </Container>
-          <Chatbot />
+          <ChatBot
+            id="eshop-bot"
+            flow={[
+              {
+                id: "greet",
+                message: "Vítejte! Jak vám mohu pomoci?",
+                trigger: "user-input"
+              },
+              {
+                id: "user-input",
+                user: true,
+                trigger: "bot-response"
+              },
+              {
+                id: "bot-response",
+                message: "Rozumím! Zkuste to říct podrobněji.",
+                trigger: "user-input"
+              }
+            ]}
+          />
         </Box>
       </Router>
     </ThemeProvider>
