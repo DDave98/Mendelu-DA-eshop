@@ -2,7 +2,7 @@ export const pages =
 {
     home: "/",
     products: "/products",
-    product: (id) => "/products/" + id,
+    product: "/products/",
     cart: "/cart",
     checkout: "/checkout",
 }

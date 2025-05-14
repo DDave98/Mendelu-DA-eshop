@@ -34,7 +34,7 @@ const Services = () => {
               </CardContent>
               <CardActions>
                 <Button size="small" color="primary" variant="contained" component={RouterLink} to="/cart"> Přidat do košíku</Button>
-                <Button size="small" color="primary" component={RouterLink} to={pages.product(service.id)}>Více o produktu</Button>
+                <Button size="small" color="primary" component={RouterLink} to={pages.product + service.id}>Více o produktu</Button>
               </CardActions>
             </Card>
           </Grid>
