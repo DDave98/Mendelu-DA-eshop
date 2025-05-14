@@ -23,7 +23,7 @@ export const DetailProduct = () =>
                     <p>Vlastnosti: </p>
                     <ul>
                         {products[id].features.map((feature, index) => (
-                            <li key={index} style={{ fontSize: '16px', color: '#555' }}>{feature}</li>
+                            <li key={index} style={{ fontSize: '16px', color: '#555', textAlign: 'left' }}>{feature}</li>
                         ))}
                     </ul>
                 </div>
