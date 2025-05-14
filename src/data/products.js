@@ -25,7 +25,7 @@ export const products =
       price: 450,
       features: ['Inflatable Design', 'Anti-Slip Deck', 'Adjustable Paddle', 'Carrying Bag Included'],
       category: 'Water Sports',
-      photo: "https://contents.mediadecathlon.com/p1741952/k$7f8a83aec340462421ebf81d84854cff/sq/podlozka-na-jogu-tpe-6-mm.jpg?format=auto&f=969x969",
+      photo: "https://contents.mediadecathlon.com/m14821799/k$64164b3ea715592711dee348a0941364/sq/podlozka-na-jogu-tpe-6-mm.jpg?format=auto&f=1200x1200",
     },
     {
       id: 4,
@@ -34,7 +34,7 @@ export const products =
       price: 800,
       features: ['Foldable Design', 'Digital Display', 'Multiple Speed Settings', 'Shock Absorption System'],
       category: 'Indoor',
-      photo: "https://contents.mediadecathlon.com/p1741952/k$7f8a83aec340462421ebf81d84854cff/sq/podlozka-na-jogu-tpe-6-mm.jpg?format=auto&f=969x969",
+      photo: "https://contents.mediadecathlon.com/m14821799/k$64164b3ea715592711dee348a0941364/sq/podlozka-na-jogu-tpe-6-mm.jpg?format=auto&f=1200x1200",
     },
     {
       id: 5,
@@ -43,7 +43,7 @@ export const products =
       price: 600,
       features: ['Skis', 'Bindings', 'Poles', 'Ski Boots'],
       category: 'Winter Sports',
-      photo: "https://contents.mediadecathlon.com/p1741952/k$7f8a83aec340462421ebf81d84854cff/sq/podlozka-na-jogu-tpe-6-mm.jpg?format=auto&f=969x969",
+      photo: "https://contents.mediadecathlon.com/m14821799/k$64164b3ea715592711dee348a0941364/sq/podlozka-na-jogu-tpe-6-mm.jpg?format=auto&f=1200x1200",
     },
     {
       id: 6,
@@ -52,7 +52,7 @@ export const products =
       price: 500,
       features: ['Foldable Design', 'Long Battery Life', 'LED Display', 'Shock Absorption'],
       category: 'Mobility',
-      photo: "https://contents.mediadecathlon.com/p1741952/k$7f8a83aec340462421ebf81d84854cff/sq/podlozka-na-jogu-tpe-6-mm.jpg?format=auto&f=969x969",
+      photo: "https://contents.mediadecathlon.com/m14821799/k$64164b3ea715592711dee348a0941364/sq/podlozka-na-jogu-tpe-6-mm.jpg?format=auto&f=1200x1200",
     },
     {
       id: 7,
@@ -61,7 +61,7 @@ export const products =
       price: 150,
       features: ['Waterproof Material', 'Easy Setup', 'Ventilation Windows', 'Lightweight'],
       category: 'Outdoor',
-      photo: "https://contents.mediadecathlon.com/p1741952/k$7f8a83aec340462421ebf81d84854cff/sq/podlozka-na-jogu-tpe-6-mm.jpg?format=auto&f=969x969",
+      photo: "https://contents.mediadecathlon.com/m14821799/k$64164b3ea715592711dee348a0941364/sq/podlozka-na-jogu-tpe-6-mm.jpg?format=auto&f=1200x1200",
     },
     {
       id: 8,
@@ -70,7 +70,7 @@ export const products =
       price: 100,
       features: ['Adjustable Weights', 'Non-Slip Grip', 'Compact Design', 'Durable Material'],
       category: 'Fitness',
-      photo: "https://contents.mediadecathlon.com/p1741952/k$7f8a83aec340462421ebf81d84854cff/sq/podlozka-na-jogu-tpe-6-mm.jpg?format=auto&f=969x969",
+      photo: "https://contents.mediadecathlon.com/m14821799/k$64164b3ea715592711dee348a0941364/sq/podlozka-na-jogu-tpe-6-mm.jpg?format=auto&f=1200x1200",
     },
     {
       id: 9,
@@ -79,7 +79,7 @@ export const products =
       price: 700,
       features: ['Lightweight Design', 'Comfortable Seat', 'Storage Compartment', 'Paddle Included'],
       category: 'Water Sports',
-      photo: "https://contents.mediadecathlon.com/p1741952/k$7f8a83aec340462421ebf81d84854cff/sq/podlozka-na-jogu-tpe-6-mm.jpg?format=auto&f=969x969",
+      photo: "https://contents.mediadecathlon.com/m14821799/k$64164b3ea715592711dee348a0941364/sq/podlozka-na-jogu-tpe-6-mm.jpg?format=auto&f=1200x1200",
     },
     {
       id: 10,
@@ -88,7 +88,7 @@ export const products =
       price: 250,
       features: ['Foldable Table', 'Net Included', 'Two Rackets', 'Set of Balls'],
       category: 'Indoor',
-      photo: "https://contents.mediadecathlon.com/p1741952/k$7f8a83aec340462421ebf81d84854cff/sq/podlozka-na-jogu-tpe-6-mm.jpg?format=auto&f=969x969",
+      photo: "https://contents.mediadecathlon.com/m14821799/k$64164b3ea715592711dee348a0941364/sq/podlozka-na-jogu-tpe-6-mm.jpg?format=auto&f=1200x1200",
     },
     {
       id: 11,
@@ -97,7 +97,7 @@ export const products =
       price: 400,
       features: ['Durable Construction', 'Bindings Included', 'Lightweight Design', 'Stylish Graphics'],
       category: 'Winter Sports',
-      photo: "https://contents.mediadecathlon.com/p1741952/k$7f8a83aec340462421ebf81d84854cff/sq/podlozka-na-jogu-tpe-6-mm.jpg?format=auto&f=969x969",
+      photo: "https://contents.mediadecathlon.com/m14821799/k$64164b3ea715592711dee348a0941364/sq/podlozka-na-jogu-tpe-6-mm.jpg?format=auto&f=1200x1200",
     },
     {
       id: 12,
@@ -106,7 +106,7 @@ export const products =
       price: 1500,
       features: ['Pedal Assist', 'Long Battery Range', 'LED Display', 'Shock Absorbers'],
       category: 'Mobility',
-      photo: "https://contents.mediadecathlon.com/p1741952/k$7f8a83aec340462421ebf81d84854cff/sq/podlozka-na-jogu-tpe-6-mm.jpg?format=auto&f=969x969",
+      photo: "https://contents.mediadecathlon.com/m14821799/k$64164b3ea715592711dee348a0941364/sq/podlozka-na-jogu-tpe-6-mm.jpg?format=auto&f=1200x1200",
     },
     {
       id: 13,
@@ -115,7 +115,7 @@ export const products =
       price: 80,
       features: ['Water-Resistant', 'Multiple Compartments', 'Adjustable Straps', 'Lightweight'],
       category: 'Outdoor',
-      photo: "https://contents.mediadecathlon.com/p1741952/k$7f8a83aec340462421ebf81d84854cff/sq/podlozka-na-jogu-tpe-6-mm.jpg?format=auto&f=969x969",
+      photo: "https://contents.mediadecathlon.com/m14821799/k$64164b3ea715592711dee348a0941364/sq/podlozka-na-jogu-tpe-6-mm.jpg?format=auto&f=1200x1200",
     },
     {
       id: 14,
@@ -124,7 +124,7 @@ export const products =
       price: 25,
       features: ['Multiple Resistance Levels', 'Portable', 'Durable Material', 'Versatile Use'],
       category: 'Fitness',
-      photo: "https://contents.mediadecathlon.com/p1741952/k$7f8a83aec340462421ebf81d84854cff/sq/podlozka-na-jogu-tpe-6-mm.jpg?format=auto&f=969x969",
+      photo: "https://contents.mediadecathlon.com/m14821799/k$64164b3ea715592711dee348a0941364/sq/podlozka-na-jogu-tpe-6-mm.jpg?format=auto&f=1200x1200",
     },
     {
       id: 15,
@@ -133,7 +133,7 @@ export const products =
       price: 600,
       features: ['Lightweight Design', 'Durable Material', 'Stylish Graphics', 'Easy to Carry'],
       category: 'Water Sports',
-      photo: "https://contents.mediadecathlon.com/p1741952/k$7f8a83aec340462421ebf81d84854cff/sq/podlozka-na-jogu-tpe-6-mm.jpg?format=auto&f=969x969",
+      photo: "https://contents.mediadecathlon.com/m14821799/k$64164b3ea715592711dee348a0941364/sq/podlozka-na-jogu-tpe-6-mm.jpg?format=auto&f=1200x1200",
     },
     {
       id: 16,
@@ -142,7 +142,7 @@ export const products =
       price: 300,
       features: ['Sturdy Construction', 'Multiple Players', 'Easy to Assemble', 'Compact Design'],
       category: 'Indoor',
-      photo: "https://contents.mediadecathlon.com/p1741952/k$7f8a83aec340462421ebf81d84854cff/sq/podlozka-na-jogu-tpe-6-mm.jpg?format=auto&f=969x969",
+      photo: "https://contents.mediadecathlon.com/m14821799/k$64164b3ea715592711dee348a0941364/sq/podlozka-na-jogu-tpe-6-mm.jpg?format=auto&f=1200x1200",
     },
     {
       id: 17,
@@ -151,7 +151,7 @@ export const products =
       price: 70,
       features: ['UV Protection', 'Anti-Fog Lens', 'Adjustable Strap', 'Comfortable Fit'],
       category: 'Winter Sports',
-      photo: "https://contents.mediadecathlon.com/p1741952/k$7f8a83aec340462421ebf81d84854cff/sq/podlozka-na-jogu-tpe-6-mm.jpg?format=auto&f=969x969",
+      photo: "https://contents.mediadecathlon.com/m14821799/k$64164b3ea715592711dee348a0941364/sq/podlozka-na-jogu-tpe-6-mm.jpg?format=auto&f=1200x1200",
     },
     {
       id: 18,
@@ -160,7 +160,7 @@ export const products =
       price: 800,
       features: ['Self-Balancing', 'Long Battery Life', 'LED Lights', 'Compact Design'],
       category: 'Mobility',
-      photo: "https://contents.mediadecathlon.com/p1741952/k$7f8a83aec340462421ebf81d84854cff/sq/podlozka-na-jogu-tpe-6-mm.jpg?format=auto&f=969x969",
+      photo: "https://contents.mediadecathlon.com/m14821799/k$64164b3ea715592711dee348a0941364/sq/podlozka-na-jogu-tpe-6-mm.jpg?format=auto&f=1200x1200",
     },
     {
       id: 19,
@@ -169,7 +169,7 @@ export const products =
       price: 120,
       features: ['Easy to Transport', 'Durable Material', 'Adjustable Heat Control', 'Easy to Clean'],
       category: 'Outdoor',
-      photo: "https://contents.mediadecathlon.com/p1741952/k$7f8a83aec340462421ebf81d84854cff/sq/podlozka-na-jogu-tpe-6-mm.jpg?format=auto&f=969x969",
+      photo: "https://contents.mediadecathlon.com/m14821799/k$64164b3ea715592711dee348a0941364/sq/podlozka-na-jogu-tpe-6-mm.jpg?format=auto&f=1200x1200",
     },
     {
       id: 20,
@@ -178,6 +178,6 @@ export const products =
       price: 40,
       features: ['Lightweight', 'Non-Slip Surface', 'Durable Material', 'Versatile Use'],
       category: 'Fitness',
-      photo: "https://contents.mediadecathlon.com/p1741952/k$7f8a83aec340462421ebf81d84854cff/sq/podlozka-na-jogu-tpe-6-mm.jpg?format=auto&f=969x969",
+      photo: "https://contents.mediadecathlon.com/m14821799/k$64164b3ea715592711dee348a0941364/sq/podlozka-na-jogu-tpe-6-mm.jpg?format=auto&f=1200x1200",
     }
 ];
