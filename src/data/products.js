@@ -7,6 +7,7 @@ export const products =
       price: 1200,
       features: ['Lightweight Frame', 'Hydraulic Disc Brakes', '21-Speed Gear System', 'Shock Absorbers'],
       category: 'Outdoor',
+      photo: "https://contents.mediadecathlon.com/m14821808/k$7f8a83aec340462421ebf81d84854cff/sq/podlozka-na-jogu-tpe-6-mm.jpg?format=auto&f=969x969",
     },
     {
       id: 2,
@@ -15,6 +16,7 @@ export const products =
       price: 30,
       features: ['Eco-Friendly Material', 'Non-Slip Surface', 'Lightweight and Portable', 'Easy to Clean'],
       category: 'Fitness',
+      photo: "https://contents.mediadecathlon.com/m14821808/k$7f8a83aec340462421ebf81d84854cff/sq/podlozka-na-jogu-tpe-6-mm.jpg?format=auto&f=969x969",
     },
     {
       id: 3,
@@ -23,6 +25,7 @@ export const products =
       price: 450,
       features: ['Inflatable Design', 'Anti-Slip Deck', 'Adjustable Paddle', 'Carrying Bag Included'],
       category: 'Water Sports',
+      photo: "https://contents.mediadecathlon.com/p1741952/k$7f8a83aec340462421ebf81d84854cff/sq/podlozka-na-jogu-tpe-6-mm.jpg?format=auto&f=969x969",
     },
     {
       id: 4,

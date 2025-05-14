@@ -17,7 +17,7 @@ import { Link as RouterLink } from 'react-router-dom';
 import { pages } from '../data/links';
 
 // This would normally come from a state management solution like Redux
-const cartItems = [];
+const cartItems : any[] = [];
 
 const Cart = () => {
   const subtotal = cartItems.reduce((sum, item) => sum + item.price * item.quantity, 0);
