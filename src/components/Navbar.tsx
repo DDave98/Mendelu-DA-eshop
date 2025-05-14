@@ -8,13 +8,13 @@ const Navbar = () => {
     <AppBar position="static">
       <Toolbar>
         <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-          Digital Services Shop
+          DA projekt e-shop
         </Typography>
         <Button color="inherit" component={RouterLink} to="/">
-          Home
+          Domů
         </Button>
-        <Button color="inherit" component={RouterLink} to="/services">
-          Services
+        <Button color="inherit" component={RouterLink} to="/products">
+          Produkty
         </Button>
         <IconButton color="inherit" component={RouterLink} to="/cart">
           <Badge badgeContent={0} color="error">

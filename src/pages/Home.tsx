@@ -23,45 +23,21 @@ const featuredServices = [
 const Home = () => {
   return (
     <Box>
-      <Box
-        sx={{
-          bgcolor: 'primary.main',
-          color: 'white',
-          py: 8,
-          textAlign: 'center',
-          mb: 4,
-        }}
-      >
-        <Typography variant="h3" component="h1" gutterBottom>
-          Professional Digital Services
-        </Typography>
-        <Typography variant="h5" component="h2" gutterBottom>
-          Boost your online presence with our expert services
-        </Typography>
+      <Box sx={{bgcolor: 'primary.main', color: 'white', py: 8, textAlign: 'center', mb: 4,}}>
+        <Typography variant="h3" component="h1" gutterBottom>Sportovní vybavení na míru</Typography>
+        <Typography variant="h5" component="h2" gutterBottom>Objevte širokou nabídku produktů pro všechny vaše potřeby</Typography>
         <Button
-          variant="contained"
-          color="secondary"
-          size="large"
-          component={RouterLink}
-          to="/services"
-          sx={{ mt: 2 }}
-        >
-          Explore Services
-        </Button>
+          variant="contained" color="secondary" size="large" component={RouterLink} to="/services" sx={{ mt: 2 }}>Prohlédnout si produkty</Button>
       </Box>
 
-      <Typography variant="h4" component="h2" gutterBottom align="center">
-        Featured Services
-      </Typography>
+      <Typography variant="h4" component="h2" gutterBottom align="center">Další služby</Typography>
 
       <Grid container spacing={4} sx={{ mt: 2 }}>
         {featuredServices.map((service, index) => (
           <Grid item xs={12} md={4} key={index}>
             <Card>
               <CardContent>
-                <Typography variant="h5" component="h3" gutterBottom>
-                  {service.title}
-                </Typography>
+                <Typography variant="h5" component="h3" gutterBottom>{service.title}</Typography>
                 <Typography variant="body1" color="text.secondary" paragraph>
                   {service.description}
                 </Typography>
