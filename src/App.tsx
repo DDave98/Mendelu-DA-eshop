@@ -9,6 +9,7 @@ import Services from './pages/Services';
 import Cart from './pages/Cart';
 import Checkout from './pages/Checkout';
 import ChatBot from 'react-chatbotify';
+import { DetailProduct } from './pages/detail';
 
 const theme = createTheme({
   palette: {
@@ -97,6 +98,7 @@ function App() {
               <Route path="products" element={<Services />} />
               <Route path="cart" element={<Cart />} />
               <Route path="checkout" element={<Checkout />} />
+              <Route path="products/:id" element={<DetailProduct />} />
             </Routes>
           </Container>
           <ChatBot flow={flow} settings={settings} />
