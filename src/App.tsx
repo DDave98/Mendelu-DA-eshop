@@ -21,7 +21,15 @@ const theme = createTheme({
   },
 });
 
-const flow = {
+type Flow = {
+  [key: string]: {
+    message?: string;
+    user?: boolean;
+    path?: string | null;
+  };
+};
+
+const flow : Flow ={
   start: {
     message: "Vítejte! Jak vám mohu pomoci?",
     path: "end"
