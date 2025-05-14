@@ -22,7 +22,7 @@ const theme = createTheme({
 });
 
 const settings = {
-  general: {embedded: true},
+  general: {embedded: false},
   chatHistory: {storageKey: "playground"},
   botBubble: {simulateStream: true}
 }
