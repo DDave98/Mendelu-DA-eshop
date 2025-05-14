@@ -1,4 +1,5 @@
 .App {
+  font-family: sans-serif;
   text-align: center;
 }
 
@@ -6,6 +7,14 @@
   height: 40vmin;
   pointer-events: none;
 }
+
+.react-chatbot-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

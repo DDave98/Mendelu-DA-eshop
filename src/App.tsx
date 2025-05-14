@@ -8,6 +8,7 @@ import Home from './pages/Home';
 import Services from './pages/Services';
 import Cart from './pages/Cart';
 import Checkout from './pages/Checkout';
+import Chatbot from './components/Chatbot/chatbot';
 
 const theme = createTheme({
   palette: {
@@ -35,6 +36,7 @@ function App() {
               <Route path="checkout" element={<Checkout />} />
             </Routes>
           </Container>
+          <Chatbot />
         </Box>
       </Router>
     </ThemeProvider>
