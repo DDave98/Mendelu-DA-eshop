@@ -20,6 +20,12 @@ export const DetailProduct = () =>
                     <p style={{ fontSize: '18px', color: '#777' }}>Kategorie: <strong>{products[id].category}</strong></p>
                     <p style={{ fontSize: '16px', color: '#555', lineHeight: '1.5' }}>{products[id].description}</p>
                     <p style={{ fontSize: '20px', color: '#333', fontWeight: 'bold' }}>Cena: {products[id].price} Kč</p>
+                    <p>Vlastnosti: </p>
+                    <ul>
+                        {products[id].features.map((feature, index) => (
+                            <li key={index} style={{ fontSize: '16px', color: '#555' }}>{feature}</li>
+                        ))}
+                    </ul>
                 </div>
             </div>
         </div>
