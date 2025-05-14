@@ -21,6 +21,16 @@ const theme = createTheme({
   },
 });
 
+const flow = {
+  start: {
+    message: "Vítejte! Jak vám mohu pomoci?",
+    path: "end"
+  },
+  end: {
+    message: "Děkuji za vaši zprávu!"
+  }
+};
+
 function App() {
   return (
     <ThemeProvider theme={theme}>
@@ -36,26 +46,7 @@ function App() {
               <Route path="checkout" element={<Checkout />} />
             </Routes>
           </Container>
-          <ChatBot
-            id="eshop-bot"
-            flow={[
-              {
-                id: "greet",
-                message: "Vítejte! Jak vám mohu pomoci?",
-                trigger: "user-input"
-              },
-              {
-                id: "user-input",
-                user: true,
-                trigger: "bot-response"
-              },
-              {
-                id: "bot-response",
-                message: "Rozumím! Zkuste to říct podrobněji.",
-                trigger: "user-input"
-              }
-            ]}
-          />
+          <ChatBot flow={flow} />
         </Box>
       </Router>
     </ThemeProvider>
