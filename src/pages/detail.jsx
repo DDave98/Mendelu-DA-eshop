@@ -4,7 +4,7 @@ import { products } from '../data/products';
 
 export const DetailProduct = () => {
     const { id } = useParams(); // Získá ID z URL
-    const product = products.find(prod => prod.id === id); 
+    const product = products.find(prod => prod.id == id); 
 
     return (
         <div className="container" style={{ margin: '0 auto', padding: '20px', fontFamily: 'Arial, sans-serif' }}>
