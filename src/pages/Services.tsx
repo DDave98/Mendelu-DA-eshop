@@ -28,7 +28,7 @@ const Services = () =>
                 <Typography variant="body1" color="text.secondary" paragraph>{service.description}</Typography>
                 <Typography variant="h6" color="primary" gutterBottom>${service.price}</Typography>
                 <Box sx={{ mt: 2 }}>
-                  {service.variants.map((feature, index) => (
+                  {service?.variants?.map((feature, index) => (
                     <Typography key={index} variant="body2" sx={{ mb: 0.5 }}>
                       • {feature}
                     </Typography>
