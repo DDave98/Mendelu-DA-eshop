@@ -11,12 +11,12 @@ export const DetailProduct = () => {
             <h1 style={{ textAlign: 'center', color: '#333' }}>Detail Product - {id}</h1>
             <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '20px', padding: '20px' }}>
                 <img
-                    src={product.image}
-                    alt={product.name}
+                    src={product?.image}
+                    alt={product?name}
                     style={{ width: '100%', maxWidth: '400px', borderRadius: '10px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)' }}
                 />
                 <div style={{ textAlign: 'center' }}>
-                    <h2 style={{ color: '#555' }}>{product.name}</h2>
+                    <h2 style={{ color: '#555' }}>{product?name}</h2>
 
                     <h3 style={{ marginTop: '20px', color: '#444' }}>Všechny parametry:</h3>
                     <ul style={{ textAlign: 'left', maxWidth: '600px', margin: '0 auto' }}>
