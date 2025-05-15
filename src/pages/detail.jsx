@@ -4,7 +4,7 @@ import { products } from '../data/products';
 
 export const DetailProduct = () => {
     const { id } = useParams(); // Získá ID z URL
-    const product = products[id];
+    const product = products.[id];
 
     return (
         <div className="container" style={{ margin: '0 auto', padding: '20px', fontFamily: 'Arial, sans-serif' }}>
@@ -12,11 +12,11 @@ export const DetailProduct = () => {
             <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '20px', padding: '20px' }}>
                 <img
                     src={product?.image}
-                    alt={product?name}
+                    alt={product?.name}
                     style={{ width: '100%', maxWidth: '400px', borderRadius: '10px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)' }}
                 />
                 <div style={{ textAlign: 'center' }}>
-                    <h2 style={{ color: '#555' }}>{product?name}</h2>
+                    <h2 style={{ color: '#555' }}>{product?.name}</h2>
 
                     <h3 style={{ marginTop: '20px', color: '#444' }}>Všechny parametry:</h3>
                     <ul style={{ textAlign: 'left', maxWidth: '600px', margin: '0 auto' }}>
