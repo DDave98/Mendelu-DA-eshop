@@ -8,7 +8,7 @@ import { useCart } from '../data/cartContext';
 const Services = () => 
 {
   const { dispatch } = useCart();
-  
+
   return (
     <Box>
       <Typography variant="h4" component="h1" gutterBottom align="center">
@@ -23,12 +23,12 @@ const Services = () =>
           <Grid item xs={12} md={6} lg={4} key={service.id}>
             <Card sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
               <CardContent sx={{ flexGrow: 1 }}>
-                <Typography variant="h5" component="h2" gutterBottom>{service.title}</Typography>
+                <Typography variant="h5" component="h2" gutterBottom>{service.name}</Typography>
                 <Chip label={service.category} color="primary" size="small" sx={{ mb: 2 }} />
                 <Typography variant="body1" color="text.secondary" paragraph>{service.description}</Typography>
                 <Typography variant="h6" color="primary" gutterBottom>${service.price}</Typography>
                 <Box sx={{ mt: 2 }}>
-                  {service.features.map((feature, index) => (
+                  {service.variants.map((feature, index) => (
                     <Typography key={index} variant="body2" sx={{ mb: 0.5 }}>
                       • {feature}
                     </Typography>
