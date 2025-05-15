@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import { products } from '../data/products';
 
 export const DetailProduct = () => {
-    const { id } = useParams(); // Získá ID z URL
+    const { id } = useParams(); // Získá ID z URL  
     const product = products[id];
 
     return (
