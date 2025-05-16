@@ -22,7 +22,7 @@ const theme = createTheme({
     },
   },
 });
-
+/*
 const settings = {
   general: {embedded: false},
   chatHistory: {storageKey: "playground"},
@@ -83,7 +83,7 @@ const flow = {
     message: "Pokud máte nějaké další otázky, stačí napsat!",
     path: "end"
   }
-};
+};*/
 
 
 function App() {
@@ -104,6 +104,7 @@ function App() {
               </Routes>
             </Container>
             {/*<ChatBot flow={flow} settings={settings} />*/}
+
           </Box>
         </Router>
       </CartProvider>
