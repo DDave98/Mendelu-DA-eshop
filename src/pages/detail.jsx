@@ -1,10 +1,13 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import { products } from '../data/products';
+import { useCart } from '../data/cartContext';
+import { Button } from '@mui/material';
 
 export const DetailProduct = () => {
     const { id } = useParams(); // Získá ID z URL  
     const product = products[id];
+    const { dispatch } = useCart();
 
     return (
         <div className="container" style={{ margin: '0 auto', padding: '20px', fontFamily: 'Arial, sans-serif' }}>
@@ -38,6 +41,15 @@ export const DetailProduct = () => {
                         ))}
                     </ul>
                 </div>
+
+                <Button
+                    size="small"
+                    color="primary"
+                    variant="contained"
+                    onClick={() => dispatch({ type: 'ADD_TO_CART', payload: service })}
+                    >
+                    Přidat do košíku
+                </Button>
             </div>
         </div>
     );
