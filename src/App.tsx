@@ -88,7 +88,7 @@ const flow = {
 
 function App() {
 
-  const chatbot = (<script>
+  /*const chatbot = (<script>
   {
     function()
     {
@@ -99,7 +99,7 @@ function App() {
         else{window.addEventListener("load",onLoad)}
     }();
   }
-  </script>)
+  </script>)*/
 
 
   return (
