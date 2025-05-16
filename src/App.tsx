@@ -8,7 +8,7 @@ import Home from './pages/Home';
 import Services from './pages/Services';
 import Cart from './pages/Cart';
 import Checkout from './pages/Checkout';
-import ChatBot from 'react-chatbotify';
+// import ChatBot from 'react-chatbotify';
 import { DetailProduct } from './pages/detail';
 import { CartProvider } from './data/cartContext';
 
@@ -103,7 +103,7 @@ function App() {
                 <Route path="products/:id" element={<DetailProduct />} />
               </Routes>
             </Container>
-            <ChatBot flow={flow} settings={settings} />
+            {/*<ChatBot flow={flow} settings={settings} />*/}
           </Box>
         </Router>
       </CartProvider>
