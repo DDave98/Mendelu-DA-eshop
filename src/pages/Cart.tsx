@@ -52,7 +52,7 @@ const Cart = () =>
                 <TableBody>
                   {cart.map((item:any) => (
                     <TableRow key={item.id}>
-                      <TableCell>{item.title}</TableCell>
+                      <TableCell>{item.name}</TableCell>
                       <TableCell align="right">${item.price}</TableCell>
                       <TableCell align="right">
                         <input
