@@ -122,7 +122,7 @@ function App() {
             <iframe
               src="https://www.chatbase.co/chatbot-iframe/7oiLltXk7XGkqENEI18EB"
               width="100%"
-              style={{height: "100%"; min-height: "700px"}}
+              style={{height: "100%", min-height: "700px"}}
               frameborder="0"
           ></iframe>
           </Box>
