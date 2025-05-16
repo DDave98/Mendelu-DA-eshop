@@ -67,6 +67,7 @@ const Cart = () =>
                           }
                         />
                       </TableCell>
+                      <TableCell align="right">${(item.price * item.quantity).toFixed(2)}</TableCell>
                       <TableCell align="right">
                         <IconButton
                           color="error"
