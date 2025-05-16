@@ -46,7 +46,7 @@ export const DetailProduct = () => {
                     size="small"
                     color="primary"
                     variant="contained"
-                    onClick={() => dispatch({ type: 'ADD_TO_CART', payload: service })}
+                    onClick={() => dispatch({ type: 'ADD_TO_CART', payload: product })}
                     >
                     Přidat do košíku
                 </Button>
