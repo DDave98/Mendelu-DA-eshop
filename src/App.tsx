@@ -124,6 +124,7 @@ function App() {
   width="100%"
   style={{ height: "100%", minHeight: "700px" }}
   frameBorder="0"
+  title="Chatbot Frame"
 ></iframe>
           </Box>
         </Router>
